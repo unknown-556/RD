@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page 1</title>
+  <link rel="stylesheet" href="/driverProfileSetup1.css">
+</head>
+<body class="center">
+   <div class="container">
+        <div class="box">
+            <img src="Frame 220.png" alt="">
+        </div>
+
+        <div class="wrapper">
+            <div class="rectangle">
+                <div class="white"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <form action="/action_page.php" id="myForm" method="post">
+            
+                <section class="input">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="name-input input-style" required>
+                </section>
+
+                <section class="input">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="name-input input-style" required>
+                </section>
+
+                <section class="input">
+                    <label for="gender">Gender</label>
+                    <input type="text" class="name-input input-style" required>
+                </section>
+
+                <section class="input">
+                    <label for="vmm">Vehicle Manufacturer and Model</label>
+                    <input type="text" class="name-input input-style" required>
+                </section>
+
+                <section class="input">
+                    <label for="year">Vehicle Year</label>
+                    <input type="text" class="name-input input-style" required>
+                </section>
+
+                <section class="input">
+                    <label for="vpn">Vehicle Plate No.</label>
+                    <input type="text" class="name-input input-style" required>
+                </section>
+
+                <section class="input">
+                    <label for="vcolor">Vehicle Color</label>
+                    <input type="text" class="name-input input-style" required>
+                </section>
+                <button type="button" class="button" onclick="submitFormAndNavigate()">Next</button>
+            </form>
+        </div>    
+    </div>
+    <script>
+        function submitFormAndNavigate() {
+            // Submit the form
+            document.getElementById('myForm').submit();
+            // Navigate to the next page
+            window.location.href = 'driverProfileSetup2.html';
+        }
+    </script>       
+</body>
+</html>
